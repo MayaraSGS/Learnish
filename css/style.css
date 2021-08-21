@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mali:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+:root{
+    --font-primary-1: 'Baloo Da 2', serif;
+    --font-secundary-2: 'Josefin Slab',serif;
+    --font-action-0: 'Muli', serif;
+
+    --border-iframe-5: 5px;
+    --border-iframe-10: 10px;
+
+    --border-img-5: 5px;
+    --border-img-10: 10px;
+
+}
+
 header{
     position: absolute;
     z-index: 10;
@@ -233,4 +249,63 @@ header{
     .service-bg h2{
         font-size: 13px;
     }
+}
+
+.contact{
+    background: url(../img/abs_3.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.head{
+    background: rgb(230, 100, 100);
+    border-radius: 5px;
+    margin-top: -40px;
+    -webkit-box-shadow: -1px 8px 13px -4px rgba(242,94,131,1);
+    -moz-box-shadow: -1px 8px 13px -4px rgba(242,94,131,1);
+    box-shadow: -1px 8px 13px -4px rgba(242,94,131,1);
+}
+
+.fas{
+    color: rgb(230, 100, 100);
+    font-size: 27px;
+}
+
+.font-pe{
+    font-family: var(--font-secundary-2);
+}
+
+.effect-1{
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.effect-1 ~ .focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(230, 100, 100);
+    transition: 0.4s;
+}
+
+.effect-1:focus ~ .focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.btn1{
+    background: rgb(230, 100, 100);
+    color: white;
+    border: none;
+    outline: none;
+    width: 145px;
+    height: 40px;
+    border-radius: 5px;
 }
