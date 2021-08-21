@@ -107,3 +107,18 @@ header{
     text-decoration: none;
     background: #b9144b;
 }
+
+.container-imagem{
+    width: 128px;   
+    height: 128px;   
+    position: relative;  
+    overflow: hidden;
+}
+
+.centralize-image{  
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    margin-top: -(ALTURA-IMAGEM / 2)px;  
+    margin-left: -(LARGURA-IMAGEM /2)px;  
+} 
