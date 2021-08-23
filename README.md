@@ -1,6 +1,6 @@
 # Bootstrap_BlogPessoal
 
-Website para um blog pessoal
+Website blog
 
 ## Icones
 
