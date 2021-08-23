@@ -51,3 +51,9 @@ header nav{
 .banner img{
     width: 25rem;
 }
+
+@media (max-width: 575.98px) {
+    .banner img{
+        opacity: 0;
+    }
+}
