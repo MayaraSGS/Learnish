@@ -14,115 +14,177 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 
-    <style>
-        body {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-
     <title>Learn</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row px-3">
-            <div class="col-lg-10 col-xl-9 
-                card flex-row mx-auto px-0">
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light p-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Learnish</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="img-left d-none d-md-flex">
-
+                <div class="collapse navbar-collapse ml-5 pl-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">School</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sutots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Not a member yet? So come with us !
+                    </span>
+                    <ul class="navbar-nav my-2 my-lg-0">
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="singIn.html">Sign in</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link borda-sign text-white p-2 pl-3 pr-3" href="signUp.html">Sign up</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="card-body cb">
-                    <h4 class="tittle text-center mt-4 p-3">
-                        Login into account
-                    </h4>
-                    <form class="form-box px-lg-3">
-                        <div class="form-input">
-                            <span><i class="fa fa-envelope-o"></i></span>
-                            <input type="email" name="" placeholder="Email 
-                            Address" tabindex="10" required>
-                        </div>
-                        <!--form-input-->
-                        <div class="form-input">
-                            <span><i class="fa fa-key"></i></span>
-                            <input type="password" name="" placeholder="
-                            password" required>
-                        </div>
-                        <!--from-input-->
+            </div>
+        </nav>
+    </header>
+    <!--header-->
 
-                        <div class="mb-3">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"
-                                id="cb1" name="">
-                                <label class="custom-control-label" for="cb1">
-                                    Remember me
-                                </label>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col containerb bg-light ml-5 p-5">
+                    <h4 class="mb-0 pb-0 text-center font-weight-bold">Did you ever study with us?</h4>
+                    <p class="pt-0 text-center mb-4">
+                        Log in and have a good class!
+                    </p>
+                    <form class="ml-5 pl-3">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <div class="col-10">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
-                            <!--custom-control-->
                         </div>
-                        <!--div-->
-
-                        <div class="mb-3">
-                            <button type="submit" class="btn btn-block text-uppercase">
-                                Login
-                            </button>
-                        </div>
-                        <!--div-->
-
-                        <div class="text-right">
-                            <a href="" class="forget-link">
-                                Forget Password?
-                            </a>
-                        </div>
-                        <!--forget password-->
-
-                        <div class="text-center mb-3">
-                            or login with
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-4">
-                                <a href="#" class="btn btn-block btn-social btn-facebook">
-                                    facebook
-                                </a>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <div class="col-10">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
                             </div>
-                            <!--facebook-->
-
-                            <div class="col-4">
-                                <a href="#" class="btn btn-block btn-social btn-google">
-                                    google
-                                </a>
-                            </div>
-                            <!--google-->
-
-                            <div class="col-4">
-                                <a href="#" class="btn btn-block btn-social btn-twitter">
-                                    twitter
-                                </a>
-                            </div>
-                            <!--twitter-->
                         </div>
-                        <!--row-->
-                        
-                        <hr class="my-4">
-
-                        <div class="text-center mb-2">
-                            Don't have an accout?
-                            <a href="signUp.html" class="register-link">
-                                Register here
-                            </a>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">remember me</label>
                         </div>
-                        <a href="index.html">Learnish</a>
+                        <a class="btn btn-secondary btn-lg mt-2 pl-5 pr-5 a" href="#" role="button">Sign in</a>
+                        <a class="btn btn-primary btn-lg mt-2 pl-3 pr-3" href="#" role="button">login with facebook</a>
+                        <a class="btn btn-danger btn-lg mt-2 pl-5 pr-5 b" href="#" role="button">login with google</a>
                     </form>
+                </div>
+                <!--login-->
+                <div class="col-6 ml-5">
+                    <h4 class="text-center font-weight">Still don't have access? study with us !</h4>
+                    <div class="row d-flex">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card ml-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex mt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="card ml-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!--card-->
+                    </div>
+                    <!--row-->
+                    <div class="row d-flex mt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="card ml-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!--card-->
+                    </div>
+                    <!--row-->
+                </div>
+                <!--card-->
+            </div>
+        </div>
+    </section>
+    <!--section login-->
+
+    <footer class="page-footer bg-light mt-5">
+        <hr>
+        <div class="row pt-1 pb-2">
+            <div class="col">
+                <h4 class="text-center">Learnish</h4>
+            </div>
+            <div class="col">
+                <h4 class="text-center">About us</h4>
+                <h5 class="text-center">texto</h5>
+                <h5 class="text-center">texto</h5>
+                <h5 class="text-center">texto</h5>
+            </div>
+            <div class="col">
+                <h5 class="text-center">Blog Learnish</h5>
+            </div> 
+            <div class="col">
+                <h4>Followa Us</h4>
+                <div class="row">
+                    <i class="fa fa-youtube-play ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-twitter ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-podcast ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-instagram ml-2" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
+    <!--Footer-->
 
     <!--Javascrit-->
     <script src="http://kit.fontawesome.com/c26cd2166c.js"></script>

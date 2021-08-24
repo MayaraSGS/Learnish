@@ -14,61 +14,147 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 
-    <style>
-        body{
-            background: #5190cc;
-            margin-top: 100px !important;
-        }
-    </style>
-
     <title>Learn</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light p-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Learnish</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ml-5 pl-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">School</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sutots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Not a member yet? So come with us !
+                    </span>
+                    <ul class="navbar-nav my-2 my-lg-0">
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="singIn.html">Sign in</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link borda-sign text-white p-2 pl-3 pr-3" href="signUp.html">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header-->
+
+    <section>
+        <div class="row ml-5">
+            <div class="col-7 bg-light">
+                <h4 class="text-center mt-4">register here.</h4>
+                <form class="m-5 justify-content-center">
+                    <div class="row p-3 justify-content-center">
+                        <div class="col-4">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-7">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <!--name-->
+                    <div class="form-row">
+                        <div class="form-group col-md-10 ml-4 pl-4">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                    </div>
+                    <!--email-->
+                    <div class="form-row">
+                        <div class="form-group col-md-5 ml-4 pl-4">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputPassword4">Confirm Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <!--passoword-->
+                    <div class="row d-flex">
+                        <div class="form-group col-md-3 ml-5 d-flex">
+                            <label for="inputState" class="mr-2">Data</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>AA...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <!--data AA-->
+                        <div class="form-group col-md-3">
+                            <select id="inputState" class="form-control">
+                                <option selected>MM...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <!--Data MM-->
+                        <div class="form-group col-md-3">
+                            <select id="inputState" class="form-control">
+                                <option selected>YYY...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <!--Data YYY-->
+                    </div>
+                    <a class="btn btn-secondary btn-lg mt-2 ml-5 pl-5 pr-5 a" href="#" role="button">Sign Up</a>
+                </form>
+                <!--form-->
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer bg-light mt-5">
+        <hr>
+        <div class="row pt-1 pb-2">
+            <div class="col">
+                <h4 class="text-center">Learnish</h4>
+            </div>
+            <div class="col">
+                <h4 class="text-center">About us</h4>
+                <h5 class="text-center">texto</h5>
+                <h5 class="text-center">texto</h5>
+                <h5 class="text-center">texto</h5>
+            </div>
+            <div class="col">
+                <h5 class="text-center">Blog Learnish</h5>
+            </div>
+            <div class="col">
+                <h4>Followa Us</h4>
                 <div class="row">
-                    <div class="col-md-5 register-left">
-                        <img src="./img/seta.png" style="width: 7rem;" alt="seta">
-                        <h3>Join Us</h3>
-                        <p>Subscribe Aao Learnish to Courses</p>
-                        <button type="button" class="btn btn-primary"><a href="index.html">About us</a></button>
-                    </div>
-                    <!--colum-->
-                    <div class="col-md-5 register-right">
-                        <h2>Register</h2>
-                        <form>
-                            <div class="register-form">
-                                <div class="form-group">
-                                    <input type="text" name="" placeholder="Name" class="form-control">
-                                </div>
-                                <!--form group-->
-
-                                <div class="form-group">
-                                    <input type="text" name="" placeholder="Username" class="form-control">
-                                </div>
-                                <!--form group-->
-
-                                <div class="form-group">
-                                    <input type="email" name="" placeholder="Email" class="form-control">
-                                </div>
-                                <!--form group-->
-
-                                <div class="form-group">
-                                    <input type="password" name="" placeholder="Password" class="form-control">
-                                </div>
-                                <!--form group-->
-                                <button type="submit" class="btn btn-danger">Register</button>
-                            </div>
-                        </form>
-                    </div>
-                    <!--colum-->
+                    <i class="fa fa-youtube-play ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-twitter ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-podcast ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-instagram ml-2" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
+    <!--Footer-->
 
     <!--Javascrit-->
     <script src="http://kit.fontawesome.com/c26cd2166c.js"></script>
